@@ -30,3 +30,35 @@ data:
   ENV: dev
   DEBUG: "true"
 ```
+### 📃 Example Deployment Using ConfigMap
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      containers:
+        - name: app
+          image: busybox
+          command: ["sh", "-c", "env && sleep 3600"]
+          env:
+            - name: ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: ENV
+            - name: DEBUG
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: DEBUG
+```
