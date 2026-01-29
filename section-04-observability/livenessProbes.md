@@ -21,7 +21,7 @@ spec:
       image: simple-webapp
       ports:
         - containerPort: 8080
-      livenessProbes:
+      livenessProbe:
         # in case of HTTP
         httpGet:
           path: /api/health
