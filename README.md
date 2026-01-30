@@ -26,3 +26,12 @@ This repository contains my personal study notes, hands-on commands, and YAML ma
 
 - 📂 section-03-multi-container-pods/
   - 📄 [multiContainerPod.md](section-03-multi-container-pods/multiContainerPod.md)
+
+- 📂 section-04-observability/
+  - 📄 [readinessProbes.md](section-04-observability/readinessProbes.md)
+  - 📄 [livenessProbes.md](section-04-observability/livenessProbes.md)
+  - 📄 [loggingAndMonitoring.md](section-04-observability/loggingAndMonitoring.md)
+ 
+- 📂 section-05-pod-design/
+  - 📄 [labelsSelectorsAndAnnotations.md](section-05-pod-design/labelsSelectorsAndAnnotations.md)
+  - 📄 [rollingUpdateAndRollback.md](section-05-pod-design/rollingUpdateAndRollback.md)
