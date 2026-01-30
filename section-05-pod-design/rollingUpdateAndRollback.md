@@ -44,5 +44,19 @@ kubectl rollout history deployment/my-deploy --revision=2
 # Rollback
 kubectl rollout undo deployment/my-deploy
 kubectl rollout undo deployment/my-deploy --to-revision=1
+```
 
+### 📃 Example Strategy Manifest
+#### RollingUpdate
+```yaml
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxSurge: 1
+    maxUnavailable: 1
+```
+#### Recreate
+```yaml
+strategy:
+  type: Recreate
 ```
