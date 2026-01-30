@@ -1,4 +1,4 @@
-## Canary Deployment
+## Canary Deployment Strategy
 
 ### 📌 Definition
 A Canary Deployment releases a new version to a small subset of users first. Traffic is split between stable and canary versions by running multiple deployments with different replica counts.
