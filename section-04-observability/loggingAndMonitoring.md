@@ -1,4 +1,4 @@
-## Loggin & Monitoring
+## Logging & Monitoring
 
 ### 🔍 Opensource Comparison for logging
 | Category              | Tool                                       | Description                                                                          |
