@@ -13,6 +13,7 @@ kubectl create serviceaccount app-sa
 
 # Describe ServiceAccount
 kubectl describe serviceaccount app-sa
+```
 
 ### 📃 Example ServiceAccount Manifest
 ```yaml
