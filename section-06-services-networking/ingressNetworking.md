@@ -68,7 +68,8 @@ kind: Ingress
 metadata:
   name: path-ingress
 spec:
-  ingressClassName: nginx
+  # # If there is only one Ingress Controller in the cluster, ingressClassName can be omitted.
+  ingressClassName: nginx 
   rules:
     - host: example.com
       http:
