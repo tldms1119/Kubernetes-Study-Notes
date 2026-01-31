@@ -3,9 +3,10 @@
 ### 📌 Definition
 A **Service** provides a stable network endpoint to access a set of Pods. Because Pods are **ephemeral** and their IPs change, Services use **labels and selectors** to route traffic reliably.
 
-A Service has two types:
+A Service has three types:
 - **ClusterIP** (default): Internal access within the cluster
 - **NodePort**: External access via `<NodeIP>:<NodePort>`
+- **LoadBalancer**: works with **a cloud provider only**
 
 ### 🔹 ClusterIP
 **ClusterIP** exposes the Service on an internal IP address that is only reachable **inside the cluster**.
@@ -32,6 +33,19 @@ It is mainly used for:
 - Accessible from outside the cluster
 - NodePort range: **30000–32767**
 - Not commonly used in production (usually replaced by LoadBalancer or Ingress)
+
+### 🔹 LoadBalancer
+LoadBalancer exposes the Service externally using a cloud provider’s managed load balancer.
+
+When a Service of type LoadBalancer is created, Kubernetes requests an external load balancer from the underlying cloud platform and assigns a public IP address.
+
+Traffic Flow: Client → Cloud LoadBalancer → NodePort → Service → Pod
+
+#### Characteristics
+- Provides external access via a cloud-managed load balancer
+- Automatically creates a NodePort internally
+- Commonly used in production environments
+- Requires a cloud provider (EKS, GKE, AKS, etc.)
 
 ### 🧪 Useful Commands
 ```bash
@@ -85,4 +99,19 @@ spec:
     - port: 80
       targetPort: 80
       nodePort: 30007
+```
+
+### 📃 Example Service Manifest (LoadBalancer)
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-lb
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx
+  ports:
+    - port: 80
+      targetPort: 80
 ```
