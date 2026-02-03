@@ -10,6 +10,10 @@ A **PersistentVolumeClaim(PVC)** is a request for storage by a user or Pod. PVC 
 - Created before PVC (static provisioning)
 - `hostPath` is mainly for testing (not production)
 
+### 🔹 persistentVolumeReclaimPolicy
+- `Delete`: Delete PV and underlying storage
+- `Retain`: Keep PV and data
+
 #### PV-PVC Binding Flow
 ```
 Pod → PVC → PV → Physical Storage
