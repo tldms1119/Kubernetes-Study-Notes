@@ -24,5 +24,7 @@ spec:
           mountPath: /cache
   volumes:
     - name: cache
-      emptyDir: /data/cache
+      path: /data/cache
+      type: Directory
+      # emptyDir: {}
 ```
