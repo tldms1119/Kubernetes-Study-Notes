@@ -7,6 +7,12 @@ A **ClusterRole** defines permissions at the cluster level, and a **ClusterRoleB
 >
 > ClusterRole / ClusterRoleBinding = Cluster scope
 
+### ✅ Scope and RBAC Usage
+- In general, **namespace-scoped resources** are controlled using **Roles and RoleBindings**
+- **Cluster-scoped resources** must be controlled using **ClusterRoles and ClusterRoleBindings**
+- However, **ClusterRole can also be used to define permissions for namespace-scoped resources**, especially when the same permissions need to be reused across multiple namespaces
+- The **actual scope of the permission is determined by the binding**, not by the role itself
+
 ### 🧪 Useful Commands
 ```bash
 # List cluster roles
