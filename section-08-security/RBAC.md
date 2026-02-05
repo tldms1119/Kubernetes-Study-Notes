@@ -1,7 +1,7 @@
 ## RBAC (Role-Based Access Control)
 
 ### 📌 Definition
-**RBAC** controls access to Kubernetes resources using **Roles** and **Bindings**.
+**RBAC** controls access to Kubernetes resources using **Roles** and **Bindings**(including **ClusterRoles** and **ClusterBindings**).
 > Permissions are defined in Roles and assigned using Bindings
 
 - **Role**: A Role defines a set of permissions **within a specific namespace**
