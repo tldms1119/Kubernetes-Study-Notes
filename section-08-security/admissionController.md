@@ -36,4 +36,7 @@ Request → Authentication → Authorization → Admission Controller → etcd
 
 > CKAD focus: Mutating/Validating for Pods, Labels, and default ServiceAccount
 
-
+### 🔹 Webhook Admission Controllers
+- External HTTP callbacks triggered by API server
+- Can be mutating or validating
+- Useful for custom policy enforcement
