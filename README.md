@@ -35,3 +35,22 @@ This repository contains my personal study notes, hands-on commands, and YAML ma
 - 📂 section-05-pod-design/
   - 📄 [labelsSelectorsAndAnnotations.md](section-05-pod-design/labelsSelectorsAndAnnotations.md)
   - 📄 [rollingUpdateAndRollback.md](section-05-pod-design/rollingUpdateAndRollback.md)
+
+- 📂 section-06-services-networking/
+  - [networkPolicy.md](./section-06-services-networking/networkPolicy.md)
+  - [ingress.md](./section-06-services-networking/ingress.md)
+  - [ingressController.md](./section-06-services-networking/ingressController.md)
+  - [serviceLoadBalancer.md](./section-06-services-networking/serviceLoadBalancer.md)
+
+- 📂 section-07-state-persistence/
+  - [volumes.md](./section-07-state-persistence/volumes.md)
+  - [persistentVolumes.md](./section-07-state-persistence/persistentVolumes.md)
+  - [persistentVolumeClaims.md](./section-07-state-persistence/persistentVolumeClaims.md)
+  - [storageClass.md](./section-07-state-persistence/storageClass.md)
+
+- 📂 section-08-security/
+  - [rbac.md](./section-08-security/rbac.md)
+  - [clusterRoleClusterRoleBinding.md](./section-08-security/clusterRoleClusterRoleBinding.md)
+  - [authorization.md](./section-08-security/authorization.md)
+  - [admissionController.md](./section-08-security/admissionController.md)
+  - [podSecurityPolicy.md](./section-08-security/podSecurityPolicy.md)
