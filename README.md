@@ -50,7 +50,12 @@ This repository contains my personal study notes, hands-on commands, and YAML ma
 
 - 📂 section-08-security/
   - [rbac.md](./section-08-security/rbac.md)
-  - [clusterRoleClusterRoleBinding.md](./section-08-security/clusterRoleClusterRoleBinding.md)
+  - [rbac2.md](./section-08-security/rbac2.md)
   - [authorization.md](./section-08-security/authorization.md)
   - [admissionController.md](./section-08-security/admissionController.md)
-  - [podSecurityPolicy.md](./section-08-security/podSecurityPolicy.md)
+  - [kubeConfig.md](./section-08-security/kubeConfig.md)
+  - [customResourceDefinition.md](./section-08-security/customResourceDefinition.md)
+    
+- 📂 section-09-helm-fundamental/
+  - [helm.md](./section-09-helm-fundamental/helm.md)
+  - [kustomize.md](./section-09-helm-fundamental/kustomize.md)
