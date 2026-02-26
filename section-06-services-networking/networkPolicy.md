@@ -21,6 +21,9 @@ kubectl describe networkpolicy allow-from-app
 
 # Test connectivity (requires another Pod)
 kubectl exec -it test-pod -- curl http://backend:80
+
+# -z: no data -v: verbose -w: timeout(s)
+kubectl exec -it test-pod -- sh nc -zv -w 2 my-service 80
 ```
 ### 📃 Example Manifest 1: Allow Ingress from Specific Pods Only
 ```yaml
