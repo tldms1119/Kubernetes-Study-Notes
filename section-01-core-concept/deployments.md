@@ -39,11 +39,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: nginx        # Which Pods do I manage?
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx      # Pod's label -> Must match the selectors's matchLabels above
     spec:
       containers:
         - name: nginx
