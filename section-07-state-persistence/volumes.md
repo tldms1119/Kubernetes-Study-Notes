@@ -27,5 +27,5 @@ spec:
       hostPath:
         path: /data/cache
         type: Directory
-      # emptyDir: {}
+      # emptyDir: {}  # Temporary storage only existing for the lifetime of Pod
 ```
