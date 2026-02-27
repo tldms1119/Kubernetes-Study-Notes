@@ -44,8 +44,7 @@ This repository contains my personal study notes, hands-on commands, and YAML ma
 
 - 📂 section-07-state-persistence/
   - [volumes.md](./section-07-state-persistence/volumes.md)
-  - [persistentVolumes.md](./section-07-state-persistence/persistentVolumes.md)
-  - [persistentVolumeClaims.md](./section-07-state-persistence/persistentVolumeClaims.md)
+  - [persistentVolumeAndClaims.md](./section-07-state-persistence/persistentVolumeAndClaims.md)
   - [storageClass.md](./section-07-state-persistence/storageClass.md)
 
 - 📂 section-08-security/
