@@ -3,7 +3,7 @@
 ### 📌 Definition
 A **PersistentVolume(PV)** is a **cluster-wide storage resource** provisioned by an administrator or dynamically by a StroageClass. PV exists independently of Pods.
 
-A **PersistentVolumeClaim(PVC)** is a request for storage by a user or Pod. PVC is namespace-scoped and binds to a matching PV. PVC-PV Binding is **one-to-one**, but but a PVC can be mounted by multiple Pods in the same namespace.
+A **PersistentVolumeClaim(PVC)** is a request for storage by a user or Pod. PVC is namespace-scoped and binds to a matching PV. PVC-PV Binding is **one-to-one**, but a PVC can be mounted by multiple Pods in the same namespace.
 
 ### ✅ Key Notes
 - PV is not **namespace-scoped**
