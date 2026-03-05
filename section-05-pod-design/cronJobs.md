@@ -2,6 +2,10 @@
 
 ### 📌 Definition
 A **CronJob** runs Jobs on a time-based Schedule, similar to Linux cron. Each execution of a CronJob creates a **new Job**
+- completions: Total number of successful pod executions required
+- parallelism: Maximum number of pods running at the same time
+- backoffLimit: Number of retries before the Job is marked as failed
+- activeDeadlineSeconds: Once job reaches its time limit, it won't deploy additional pods, even if the `backoffLimit` is not yet reached
 
 #### Cron Schedule Format
 ```text
