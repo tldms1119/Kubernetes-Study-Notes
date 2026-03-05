@@ -5,6 +5,7 @@
 - completions: Total number of successful pod executions required
 - parallelism: Maximum number of pods running at the same time
 - backoffLimit: Number of retries before the Job is marked as failed
+- activeDeadlineSeconds: Once job reaches its time limit, it won't deploy additional pods, even if the `backoffLimit` is not yet reached
 
 ### ✅ Key Notes
 - `restartPolicy` must be `Never` or `OnFailure`
