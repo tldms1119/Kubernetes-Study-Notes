@@ -38,9 +38,7 @@ This repository contains my personal study notes, hands-on commands, and YAML ma
 
 - 📂 section-06-services-networking/
   - [networkPolicy.md](./section-06-services-networking/networkPolicy.md)
-  - [ingress.md](./section-06-services-networking/ingress.md)
-  - [ingressController.md](./section-06-services-networking/ingressController.md)
-  - [serviceLoadBalancer.md](./section-06-services-networking/serviceLoadBalancer.md)
+  - [ingressNetworking.md](./section-06-services-networking/ingressNetworking.md)
 
 - 📂 section-07-state-persistence/
   - [volumes.md](./section-07-state-persistence/volumes.md)
