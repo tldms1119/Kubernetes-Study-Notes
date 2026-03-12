@@ -46,8 +46,8 @@ This repository contains my personal study notes, hands-on commands, and YAML ma
   - [storageClass.md](./section-07-state-persistence/storageClass.md)
 
 - 📂 section-08-security/
-  - [rbac.md](./section-08-security/rbac.md)
-  - [rbac2.md](./section-08-security/rbac2.md)
+  - [RBAC.md](./section-08-security/RBAC.md)
+  - [RBAC2.md](./section-08-security/RBAC2.md)
   - [authorization.md](./section-08-security/authorization.md)
   - [admissionController.md](./section-08-security/admissionController.md)
   - [kubeConfig.md](./section-08-security/kubeConfig.md)
